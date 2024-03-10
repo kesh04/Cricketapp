@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#A9B3E4"
+    android:backgroundTint="#F1F2F4"
+    tools:context=".my_row">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="235dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="162dp"
+            android:background="#183451"
+            android:backgroundTint="#CBD0F6"
+            android:padding="12dp"
+            android:scrollbarTrackHorizontal="@android:drawable/arrow_down_float"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="1dp">
+
+            <TextView
+                android:id="@+id/pl_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textColor="#000"
+                android:textSize="0sp"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/ply_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="156dp"
+                android:layout_marginTop="8dp"
+                android:text="Sadeera"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/pl_id"
+                app:layout_constraintTop_toTopOf="@+id/pl_id" />
+
+            <TextView
+                android:id="@+id/ply_match"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="24"
+                app:layout_constraintStart_toStartOf="@+id/ply_name"
+                app:layout_constraintTop_toBottomOf="@+id/ply_name" />
+
+            <TextView
+                android:id="@+id/ply_runs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="738"
+                app:layout_constraintStart_toStartOf="@+id/ply_match"
+                app:layout_constraintTop_toBottomOf="@+id/ply_match" />
+
+            <TextView
+                android:id="@+id/ply_50"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7"
+                app:layout_constraintStart_toStartOf="@+id/ply_runs"
+                app:layout_constraintTop_toBottomOf="@+id/ply_runs" />
+
+            <TextView
+                android:id="@+id/ply_100"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="03"
+                app:layout_constraintStart_toStartOf="@+id/ply_50"
+                app:layout_constraintTop_toBottomOf="@+id/ply_50" />
+
+            <TextView
+                android:id="@+id/ply_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="44dp"
+                android:layout_marginEnd="40dp"
+                android:text="88.65"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="260dp"
+                android:layout_marginBottom="4dp"
+                android:text="batting average"
+                app:layout_constraintBottom_toTopOf="@+id/ply_rate"
+                app:layout_constraintStart_toEndOf="@+id/pl_id" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="12dp"
+                android:text="Name:"
+                app:layout_constraintEnd_toStartOf="@+id/ply_name"
+                app:layout_constraintHorizontal_bias="0.863"
+                app:layout_constraintStart_toEndOf="@+id/pl_id"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="86dp"
+                android:layout_height="109dp"
+                android:layout_marginStart="4dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.478"
+                app:srcCompat="@drawable/per" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Match:"
+                app:layout_constraintEnd_toStartOf="@+id/ply_match"
+                app:layout_constraintHorizontal_bias="0.555"
+                app:layout_constraintStart_toEndOf="@+id/imageView4"
+                app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Runs:"
+                app:layout_constraintEnd_toStartOf="@+id/ply_runs"
+                app:layout_constraintHorizontal_bias="0.428"
+                app:layout_constraintStart_toEndOf="@+id/imageView4"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="50:"
+                app:layout_constraintEnd_toStartOf="@+id/ply_50"
+                app:layout_constraintStart_toEndOf="@+id/imageView4"
+                app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100:"
+                app:layout_constraintEnd_toStartOf="@+id/ply_100"
+                app:layout_constraintStart_toEndOf="@+id/imageView4"
+                app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
